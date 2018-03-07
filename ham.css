@@ -1,0 +1,49 @@
+.ham{
+  position: relative;
+  width: 40px;
+  height: 40px;
+  background: #2196F3;
+  display: flex;
+  justify-content: center;
+  border-radius: 100%
+}
+
+
+span{
+  /* margin-top: 10px; */
+  text-align: center;
+  display: block;
+  width:25px;
+  color: white;
+  height:3px;
+  z-index: 1;
+  background: white;
+  position: absolute;
+}
+
+span:nth-child(1){
+  top:9px;
+  transition: 0.4s cubic-bezier(0.39, 0.575, 0.565, 1);
+
+}
+
+span:nth-child(2){
+  top:18px;
+  transition: 0.4s cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+span:nth-child(3){
+  top:27px;
+  transition: 0.4s cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+.lol span:nth-child(1){
+  top: 18px;
+  transform: rotate(45deg);
+}
+
+.lol span:nth-child(2), .lol span:nth-child(3){
+  top: 18px;
+  transform: rotate(-45deg);
+}
+
